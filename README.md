@@ -13,13 +13,13 @@ This research-figure reference library is organized by paper. It focuses on exam
 
 The repository is intended for personal research reading and figure-design reference. It does not define any ImplantAgent scoring item, weight, threshold, clinical endpoint or conclusion.
 
-## Recommended reading order
+## How to use this library
 
-1. [GPBench complete Paper Card — Chinese](2026-04-16_GPBench/paper-card.md)
-2. [GPBench analysis of all six main figures — Chinese](2026-04-16_GPBench/figure-analysis.md)
-3. Lung-surgery InferOperate Thorax planning Paper Card: [English](2025-05-01_InferOperate_Thorax/paper-card_en.md) | [中文](2025-05-01_InferOperate_Thorax/paper-card.md)
-4. Lung-surgery InferOperate Thorax analysis of all four main figures: [English](2025-05-01_InferOperate_Thorax/figure-analysis_en.md) | [中文](2025-05-01_InferOperate_Thorax/figure-analysis.md)
-5. Select other papers from the “most reusable figure design” column below.
+1. Start with the paper directory below. It is ordered by formal publication date, with the newest paper first.
+2. Choose a paper according to the figure-design problem you want to solve, using the “Most reusable figure design” column.
+3. Open `paper-card.md`, when available, for the complete source-grounded deep reading, key evidence and claim boundaries.
+4. Open `figure-analysis.md` for figure-by-figure analysis of workflow, benchmark or scoring design, result presentation and transferable visual grammar.
+5. Treat saved source figures or faithful PDF page views as design references. Verify every scientific claim against the cited original article.
 
 ## Paper directory
 

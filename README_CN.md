@@ -13,13 +13,13 @@
 
 本仓库用于个人科研阅读和图形设计参考。它不为 ImplantAgent 确定任何评分项、权重、阈值、临床终点或结论。
 
-## 推荐阅读顺序
+## 如何使用本库
 
-1. [GPBench 完整 Paper Card](2026-04-16_GPBench/paper-card.md)
-2. [GPBench 六张主图逐图分析](2026-04-16_GPBench/figure-analysis.md)
-3. 肺手术 InferOperate Thorax 规划研究 Paper Card：[中文](2025-05-01_InferOperate_Thorax/paper-card.md) | [English](2025-05-01_InferOperate_Thorax/paper-card_en.md)
-4. 肺手术 InferOperate Thorax 四张主图逐图分析：[中文](2025-05-01_InferOperate_Thorax/figure-analysis.md) | [English](2025-05-01_InferOperate_Thorax/figure-analysis_en.md)
-5. 按下面的“可借鉴图形”选择其他论文。
+1. 从下方论文目录开始；目录按出版社正式发表日期倒序排列，最新论文在最前。
+2. 根据你要解决的画图问题，使用“最值得借鉴的图形”一栏选择论文。
+3. 若论文目录中有 `paper-card.md`，用它查看完整、来源可追溯的深读、关键证据和结论边界。
+4. 用 `figure-analysis.md` 查看每张图的工作流、benchmark 或评分设计、结果表达及可迁移的视觉语法分析。
+5. 保存的论文原图或忠实 PDF 页面仅用于设计参考；所有科学结论仍须回到所引用的原文核验。
 
 ## 论文目录
 
