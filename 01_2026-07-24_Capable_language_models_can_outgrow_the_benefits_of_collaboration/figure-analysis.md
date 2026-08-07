@@ -1,5 +1,7 @@
 # 单 agent 与多 agent scaling：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Kim Y, Gu K, Park C, et al. *Capable language models can outgrow the benefits of collaboration*. **Nature Machine Intelligence**. 2026;8:1157–1172. [DOI](https://doi.org/10.1038/s42256-026-01268-y)
 
 ![Figure 2——六个 benchmark 上单 agent 与四种多 agent 架构的匹配箱线图](figures/agent_scaling_fig2.png)

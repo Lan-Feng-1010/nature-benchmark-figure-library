@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "source_type": "pdf",
-  "source_path": "E:\\1 implant planning\\outputs\\literature_analysis\\benchmark_scoring_figure_examples_20260806\\gpbench_nature_communications_2026.pdf",
+  "source_path": "source_article.pdf",
   "source_sha256": "21db6b495aae2edc5767911fef1736d94ea6148fa8c97200e77c5238c4d5db3b",
   "metadata": {
     "format": "PDF 1.4",
@@ -255,7 +255,7 @@
       }
     ]
   },
-  "rendered_pages_dir": "E:\\1 implant planning\\workspace_records\\90_process_files_pending_cleanup\\gpbench_figure_ref_stage_20260806\\visual-assets\\pages",
+  "rendered_pages_dir": "figures",
   "extraction": {
     "engine": "PyMuPDF",
     "visual_pages_rendered": true,

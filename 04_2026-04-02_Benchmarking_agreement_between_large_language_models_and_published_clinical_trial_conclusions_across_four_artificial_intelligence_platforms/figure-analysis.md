@@ -1,5 +1,7 @@
 # 临床试验结论评分流程图：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Mao G, Snyder W III, Chinthala AS, et al. *Benchmarking agreement between large language models and published clinical trial conclusions across four artificial intelligence platforms*. **Scientific Reports**. 2026;16:15606. [DOI](https://doi.org/10.1038/s41598-026-45326-2)
 
 ![Figure 2——从模型回答到双评分者、五个域、25 分总分与一致性分析的完整评分链（PDF页面图）](figures/Figure_2_methodology_page.png)

@@ -1,5 +1,7 @@
 # GPBench 主图逐图深入分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large language models with a general practice benchmark*. **Nature Communications** 2026;17:5302. [DOI](https://doi.org/10.1038/s41467-026-71622-6)
 
 > 本文件聚焦“作者怎样在图中描述 benchmark 与结果”。数值和结论均按论文正文及官方主图核对；“对 ImplantAgent 的启发”属于项目分析，不是原文结论。

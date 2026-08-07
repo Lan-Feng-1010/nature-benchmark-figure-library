@@ -1,5 +1,7 @@
 # AFMBench：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Mandal I, Soni J, Zaki M, et al. *Evaluating large language model agents for automation of atomic force microscopy*. **Nature Communications**. 2025;16:9104. [DOI](https://doi.org/10.1038/s41467-025-64105-7)
 
 ![Figure 1——多 agent 架构、真实仪器和示例执行轨迹](figures/afmbench_fig1.png)

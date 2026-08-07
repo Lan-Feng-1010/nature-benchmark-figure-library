@@ -1,5 +1,7 @@
 # BioMedAgent：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Bu D, Sun J, Li K, et al. *Empowering AI data scientists using a multi-agent LLM framework with self-evolving capabilities for autonomous, tool-aware biomedical data analyses*. **Nature Biomedical Engineering**. 2026. [DOI](https://doi.org/10.1038/s41551-026-01634-6)
 
 ![Figure 1——输入、规划—编码—执行循环与 benchmark 分类](figures/biomedagent_fig1.png)

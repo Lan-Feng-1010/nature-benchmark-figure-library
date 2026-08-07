@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "source_type": "pdf",
-  "source_path": "E:\\1 implant planning\\outputs\\literature_analysis\\lung_ai_3d_planning_paper_card_20260805\\main_article.pdf",
+  "source_path": "source_article.pdf",
   "source_sha256": "24d394cfa8c0efbb5e862306841bea075c05719523c92c840ffa906122b8fc73",
   "metadata": {
     "format": "PDF 1.4",
@@ -157,7 +157,7 @@
     ],
     "equations": []
   },
-  "rendered_pages_dir": "E:\\1 implant planning\\outputs\\literature_analysis\\lung_ai_3d_planning_paper_card_20260805\\visual-assets\\pages",
+  "rendered_pages_dir": "figures",
   "extraction": {
     "engine": "PyMuPDF",
     "visual_pages_rendered": true,

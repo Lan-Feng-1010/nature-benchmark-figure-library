@@ -1,5 +1,7 @@
 # PHIA 可穿戴健康 agent：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Merrill MA, Paruchuri A, Rezaei N, et al. *Transforming wearable data into personal health insights using large language model agents*. **Nature Communications**. 2026;17:1143. [DOI](https://doi.org/10.1038/s41467-025-67922-y)
 
 ![Figure 1——客观题、开放题、合成用户与 agent 循环](figures/phia_fig1.png)

@@ -1,5 +1,7 @@
 # Paper Card：Evaluating clinical competencies of large language models with a general practice benchmark
 
+**语言：中文 | [English](paper-card_en.md)**
+
 > Source coverage: Full paper with all six main-text figures and four main-text tables
 >
 > Extraction confidence: High

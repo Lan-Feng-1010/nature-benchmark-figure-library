@@ -1,5 +1,7 @@
 # Clinical agent benchmark：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Liu Y, Carrero ZI, Jiang X, et al. *Benchmarking large language model-based agent systems for clinical decision tasks*. **npj Digital Medicine**. 2026;9:259. [DOI](https://doi.org/10.1038/s41746-026-02443-6)
 
 ![Figure 1——模型/agent、数据集与评价端点总览](figures/clinical_agent_fig1.png)

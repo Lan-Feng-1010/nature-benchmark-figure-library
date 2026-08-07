@@ -1,5 +1,7 @@
 # AgentClinic：参考图分析
 
+**语言：中文 | [English](figure-analysis_en.md)**
+
 论文：Schmidgall S, Ziaei R, Harris C, et al. *AgentClinic: a multimodal benchmark for tool-using clinical AI agents*. **npj Digital Medicine**. 2026;9:499. [DOI](https://doi.org/10.1038/s41746-026-02674-7)
 
 ![Figure 1——交互式临床 agent 环境与示例轨迹](figures/agentclinic_fig1.png)
