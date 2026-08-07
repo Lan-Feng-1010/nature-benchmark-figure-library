@@ -2,7 +2,7 @@
 
 **语言：[English](README.md) | 中文**
 
-这是一个按论文组织的科研画图参考库，重点保存 Nature Portfolio 及相关高影响力期刊中的：
+这是一个按论文组织的公开科研画图参考库，重点保存 Nature Portfolio 及相关高影响力期刊中的：
 
 - benchmark 总工作流图；
 - 完整评分域、层级与权重图；

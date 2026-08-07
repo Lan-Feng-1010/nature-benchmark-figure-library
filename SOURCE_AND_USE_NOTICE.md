@@ -4,7 +4,7 @@
 
 ## Scope
 
-This notice applies to every paper folder in this private research library, including papers added in the future. A folder may contain source figures supplied by a publisher, faithful PDF page views, bibliographic metadata, and newly written Paper Cards or figure-analysis notes. The library is for personal scholarly reading and figure-design study; it is not a republication of the source articles.
+This notice applies to every paper folder in this publicly accessible research library, including papers added in the future. A folder may contain source figures supplied by a publisher, faithful PDF page views, bibliographic metadata, and newly written Paper Cards or figure-analysis notes. The library is for scholarly reading and figure-design study; it is not a republication of the source articles.
 
 ## Source attribution
 
@@ -16,9 +16,10 @@ This notice applies to every paper folder in this private research library, incl
 ## Rights and licensing
 
 - Copyright and licensing of source figures, article text and faithful PDF page views remain with the original authors, publishers and other applicable rights holders.
-- The repository owner does not claim copyright over source material merely because it is stored in a private repository.
-- Private-repository access does not alter an article's license and does not grant permission to redistribute, publish or commercially reuse source material.
+- The repository owner does not claim copyright over third-party source material merely because it is stored in a public repository.
+- Public access allows people to view the repository, but it does not grant permission to redistribute, publish or commercially reuse third-party source material and does not by itself create an open-content licence.
 - Before using any source figure outside personal study, check the article's current license and obtain permission when required.
+- If public hosting of a source file is not permitted by its licence or another lawful basis, replace that file with a citation or lawful link, or remove it promptly.
 
 ## Scholarly use and boundaries
 

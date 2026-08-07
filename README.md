@@ -2,7 +2,7 @@
 
 **Language: English | [中文](README_CN.md)**
 
-This research-figure reference library is organized by paper. It focuses on examples from Nature Portfolio and related high-impact journals that show:
+This public research-figure reference library is organized by paper. It focuses on examples from Nature Portfolio and related high-impact journals that show:
 
 - end-to-end benchmark workflows;
 - complete scoring domains, hierarchies and weights;
