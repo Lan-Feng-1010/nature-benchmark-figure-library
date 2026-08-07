@@ -15,25 +15,25 @@
 
 ## 推荐阅读顺序
 
-1. [GPBench 完整 Paper Card](01_GPBench_Nature_Communications_2026/paper-card.md)
-2. [GPBench 六张主图逐图分析](01_GPBench_Nature_Communications_2026/figure-analysis.md)
-3. 肺手术 AI-3D 规划研究 Paper Card：[中文](02_Lung_AI3D_Nature_Communications_2025/paper-card.md) | [English](02_Lung_AI3D_Nature_Communications_2025/paper-card_en.md)
-4. 肺手术 AI-3D 四张主图逐图分析：[中文](02_Lung_AI3D_Nature_Communications_2025/figure-analysis.md) | [English](02_Lung_AI3D_Nature_Communications_2025/figure-analysis_en.md)
+1. [GPBench 完整 Paper Card](2026-04-16_GPBench/paper-card.md)
+2. [GPBench 六张主图逐图分析](2026-04-16_GPBench/figure-analysis.md)
+3. 肺手术 InferOperate Thorax 规划研究 Paper Card：[中文](2025-05-01_InferOperate_Thorax/paper-card.md) | [English](2025-05-01_InferOperate_Thorax/paper-card_en.md)
+4. 肺手术 InferOperate Thorax 四张主图逐图分析：[中文](2025-05-01_InferOperate_Thorax/figure-analysis.md) | [English](2025-05-01_InferOperate_Thorax/figure-analysis_en.md)
 5. 按下面的“可借鉴图形”选择其他论文。
 
 ## 论文目录
 
 | 目录 | 论文／期刊 | 保存内容 | 最值得借鉴的图形 |
 |---|---|---|---|
-| [01 GPBench](01_GPBench_Nature_Communications_2026/) | Li et al., *Nature Communications*, 2026 | 6 张官方主图、完整中文 Paper Card、逐图分析、来源包与审计 | benchmark 工作流、全部评分域与权重、分域小多图、样本分布 |
-| [02 Lung AI-3D](02_Lung_AI3D_Nature_Communications_2025/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中英文 Paper Card、中英文逐图分析、来源包与各自审计 | 多读者多病例设计、辅助前后临床规划结果 |
-| [03 ClinicalAgentBench](03_ClinicalAgentBench_npj_Digital_Medicine_2026/) | Liu et al., *npj Digital Medicine*, 2026 | 4 张主图及分析 | 准确率—token 权衡、工作流复杂度、幻觉传播 |
-| [04 AgentClinic](04_AgentClinic_npj_Digital_Medicine_2026/) | Schmidgall et al., *npj Digital Medicine*, 2026 | 2 张主图及分析 | agent 环境 + 具体轨迹、医生/患者模型因素拆分 |
-| [05 BioMedAgent](05_BioMedAgent_Nature_Biomedical_Engineering_2026/) | Bu et al., *Nature Biomedical Engineering*, 2026 | 3 张主图及分析 | 规划—编码—执行回路、逐任务状态、外部 benchmark |
-| [06 AFMBench](06_AFMBench_Nature_Communications_2025/) | Mandal et al., *Nature Communications*, 2025 | 3 张主图及分析 | 工具/agent 需求构成、成本效率、任务复杂度分层 |
-| [07 Agent Scaling](07_AgentScaling_Nature_Machine_Intelligence_2026/) | Kim et al., *Nature Machine Intelligence*, 2026 | 1 张代表图及分析 | 匹配小多图、箱线分布、相对变化标注 |
-| [08 PHIA](08_PHIA_Nature_Communications_2026/) | Merrill et al., *Nature Communications*, 2026 | 2 张主图及分析 | 自动客观指标与人工/专家评分分开呈现 |
-| [09 Clinical Trial Scoring](09_ClinicalTrialScoring_Scientific_Reports_2026/) | Mao et al., *Scientific Reports*, 2026 | 1 张评分流程图及分析 | 评分者、0–5 域、汇总与一致性完整评分链 |
+| [2025-05-01 — InferOperate Thorax](2025-05-01_InferOperate_Thorax/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中英文 Paper Card、中英文逐图分析、来源包与各自审计 | 多读者多病例设计、辅助前后临床规划结果 |
+| [2025-10-14 — AFMBench](2025-10-14_AFMBench/) | Mandal et al., *Nature Communications*, 2025 | 3 张主图及分析 | 工具/agent 需求构成、成本效率、任务复杂度分层 |
+| [2026-01-12 — PHIA](2026-01-12_PHIA/) | Merrill et al., *Nature Communications*, 2026 | 2 张主图及分析 | 自动客观指标与人工/专家评分分开呈现 |
+| [2026-02-18 — Benchmarking large language model-based agent systems for clinical decision tasks](2026-02-18_Benchmarking_large_language_model-based_agent_systems_for_clinical_decision_tasks/) | Liu et al., *npj Digital Medicine*, 2026 | 4 张主图及分析 | 准确率—token 权衡、工作流复杂度、幻觉传播 |
+| [2026-03-30 — BioMedAgent](2026-03-30_BioMedAgent/) | Bu et al., *Nature Biomedical Engineering*, 2026 | 3 张主图及分析 | 规划—编码—执行回路、逐任务状态、外部 benchmark |
+| [2026-04-02 — Benchmarking agreement between large language models and published clinical trial conclusions across four artificial intelligence platforms](2026-04-02_Benchmarking_agreement_between_large_language_models_and_published_clinical_trial_conclusions_across_four_artificial_intelligence_platforms/) | Mao et al., *Scientific Reports*, 2026 | 1 张评分流程图及分析 | 评分者、0–5 域、汇总与一致性完整评分链 |
+| [2026-04-16 — GPBench](2026-04-16_GPBench/) | Li et al., *Nature Communications*, 2026 | 6 张官方主图、完整中文 Paper Card、逐图分析、来源包与审计 | benchmark 工作流、全部评分域与权重、分域小多图、样本分布 |
+| [2026-04-27 — AgentClinic](2026-04-27_AgentClinic/) | Schmidgall et al., *npj Digital Medicine*, 2026 | 2 张主图及分析 | agent 环境 + 具体轨迹、医生/患者模型因素拆分 |
+| [2026-07-24 — Capable language models can outgrow the benefits of collaboration](2026-07-24_Capable_language_models_can_outgrow_the_benefits_of_collaboration/) | Kim et al., *Nature Machine Intelligence*, 2026 | 1 张代表图及分析 | 匹配小多图、箱线分布、相对变化标注 |
 
 ## 对手术方案 benchmark 的组合参考
 
@@ -41,14 +41,15 @@
 
 1. 用 GPBench Figure 1 语法画“输入—标注—系统—评分—结果”；
 2. 用 GPBench Figure 2 语法画全部评分域，但把不可补偿的安全条件放在门控层；
-3. 用 Lung AI-3D 的多读者多病例结构组织临床方案比较；
-4. 用 ClinicalAgentBench 的状态图解释自动输出、人工复核和失败传播；
+3. 用 InferOperate Thorax 研究的多读者多病例结构组织临床方案比较；
+4. 用 Liu 等人临床智能体评测研究的状态图解释自动输出、人工复核和失败传播；
 5. 用 PHIA 的点区间图把自动几何指标与专家可接受性分开；
-6. 用 AFMBench/Agent Scaling 的小多图按病例复杂度、牙位或版本分层。
+6. 用 AFMBench 和 Kim 等人多智能体协作研究的小多图按病例复杂度、牙位或版本分层。
 
 ## 文件约定
 
 - 每篇论文一个目录。
+- 目录标题统一为 `YYYY-MM-DD_正式模型或 benchmark 名`；如果论文没有明确命名的单一模型、系统或 benchmark，则使用 `YYYY-MM-DD_原文章名`。日期采用出版社页面的正式 `Published` 日期，不使用接收日期、卷年或入库日期。
 - `figures/`：论文原始主图或忠实 PDF 页面视图，不保存重绘冒充原图的图片。
 - `paper-card.md`：完整中文深读卡片；仅在做过全文精读时提供。
 - `paper-card_en.md`：对应英文深读卡片；仅在已有来源一致性审计时提供。
