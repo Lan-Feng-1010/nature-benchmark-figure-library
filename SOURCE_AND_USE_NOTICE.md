@@ -1,28 +1,32 @@
 # Source and use notice
 
-## Purpose
+**Language: English | [中文](SOURCE_AND_USE_NOTICE_CN.md)**
 
-This private repository is a personal academic reference library for studying scientific-figure structure. It contains unmodified publisher figure images or faithful PDF page views together with original Chinese analysis.
+## Scope
 
-## Rights
+This notice applies to every paper folder in this private research library, including papers added in the future. A folder may contain source figures supplied by a publisher, faithful PDF page views, bibliographic metadata, and newly written Paper Cards or figure-analysis notes. The library is for personal scholarly reading and figure-design study; it is not a republication of the source articles.
 
-- Copyright and licensing of each source figure remain with the original authors and publishers.
-- The repository owner does not claim ownership of the source figures.
-- The analytical Markdown files are newly written research notes, but they do not replace or reproduce the full papers.
-- Before reusing any source image outside private study, check the license on the article page and obtain permission when required.
+## Source attribution
 
-## Source links
+- Each Paper Card or figure-analysis file should identify the original article, journal, DOI or stable publisher URL, and the relevant figure or PDF-page locator.
+- Package-level provenance or source-bundle files should be retained when available.
+- The two-digit folder prefix is only a newest-first navigation rank. It does not change the article identity, publication date, authorship, citation or licensing status.
+- The original article remains the authoritative source. Repository notes are navigation and analysis aids, not substitutes for checking the publication itself.
 
-1. Li Z, Yang Y, Lang J, et al. GPBench. https://doi.org/10.1038/s41467-026-71622-6
-2. Chen X, Dai C, Peng M, et al. Lung AI-3D planning. https://doi.org/10.1038/s41467-025-59200-8
-3. Liu Y, Carrero ZI, Jiang X, et al. Clinical agent systems. https://doi.org/10.1038/s41746-026-02443-6
-4. Schmidgall S, Ziaei R, Harris C, et al. AgentClinic. https://doi.org/10.1038/s41746-026-02674-7
-5. Bu D, Sun J, Li K, et al. BioMedAgent. https://doi.org/10.1038/s41551-026-01634-6
-6. Mandal I, Soni J, Zaki M, et al. AFMBench. https://doi.org/10.1038/s41467-025-64105-7
-7. Kim Y, Gu K, Park C, et al. Agent scaling. https://doi.org/10.1038/s42256-026-01268-y
-8. Merrill MA, Paruchuri A, Rezaei N, et al. PHIA. https://doi.org/10.1038/s41467-025-67922-y
-9. Mao G, Snyder W III, Chinthala AS, et al. Clinical-trial conclusion scoring. https://doi.org/10.1038/s41598-026-45326-2
+## Rights and licensing
 
-## Paper Card audit note
+- Copyright and licensing of source figures, article text and faithful PDF page views remain with the original authors, publishers and other applicable rights holders.
+- The repository owner does not claim copyright over source material merely because it is stored in a private repository.
+- Private-repository access does not alter an article's license and does not grant permission to redistribute, publish or commercially reuse source material.
+- Before using any source figure outside personal study, check the article's current license and obtain permission when required.
 
-The GPBench Paper Card passed the bundled `nature-paper-card` audit with 17 passes, 0 warnings and 0 errors. The audit used a temporary byte-identical card whose six GitHub-relative image links were replaced with existing absolute local paths solely for the auditor's filesystem check. The delivered card retains relative links so images render correctly on GitHub.
+## Scholarly use and boundaries
+
+- Paper Cards and figure analyses are original research notes, but they do not independently validate every claim in the source article.
+- Do not copy a source figure directly into a new manuscript, presentation, website or dataset unless its license permits that use or permission has been obtained.
+- New scientific figures may learn from information hierarchy, panel logic or visual grammar, but should be independently designed and should cite the relevant original sources when their data or ideas are used.
+- Do not extend a figure-analysis statement beyond what the cited original article supports.
+
+## Audit and provenance
+
+Package audits and source bundles, when present, document source alignment, required files and link integrity. An audit pass is not a publisher licence, permission decision or independent guarantee that the article's scientific conclusions are correct. Because this notice is library-wide, newly added papers are covered without adding a paper-specific list here.

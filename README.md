@@ -63,4 +63,4 @@ The most useful design combines figure grammars rather than copying one paper:
 
 ## Rights and citation
 
-Image rights and licences remain with the original authors and publishers. Each analysis provides the paper title, journal and DOI. This repository does not claim copyright over source figures, and the figures should not be republished directly as new manuscript illustrations. New figures should reuse the information structure while being independently designed. See [SOURCE_AND_USE_NOTICE.md](SOURCE_AND_USE_NOTICE.md).
+Image rights and licences remain with the original authors and publishers. Each analysis provides the paper title, journal and DOI. This repository does not claim copyright over source figures, and the figures should not be republished directly as new manuscript illustrations. New figures should reuse the information structure while being independently designed. See the [source and use notice](SOURCE_AND_USE_NOTICE.md).
