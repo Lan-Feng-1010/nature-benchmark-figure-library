@@ -13,6 +13,8 @@
 
 本仓库用于个人科研阅读和图形设计参考。它不为 ImplantAgent 确定任何评分项、权重、阈值、临床终点或结论。
 
+根目录论文文件夹使用两位导航序号（`01` = 最新），使 GitHub 原生文件夹列表也按最新优先显示；下方论文目录标题不显示这个仅用于排序的前缀。
+
 ## 如何使用本库
 
 1. 从下方论文目录开始；目录按出版社正式发表日期倒序排列，最新论文在最前。
@@ -25,15 +27,15 @@
 
 | 目录 | 论文／期刊 | 保存内容 | 最值得借鉴的图形 |
 |---|---|---|---|
-| [2026-07-24 — Capable language models can outgrow the benefits of collaboration](2026-07-24_Capable_language_models_can_outgrow_the_benefits_of_collaboration/) | Kim et al., *Nature Machine Intelligence*, 2026 | 1 张代表图及分析 | 匹配小多图、箱线分布、相对变化标注 |
-| [2026-04-27 — AgentClinic](2026-04-27_AgentClinic/) | Schmidgall et al., *npj Digital Medicine*, 2026 | 2 张主图及分析 | agent 环境 + 具体轨迹、医生/患者模型因素拆分 |
-| [2026-04-16 — GPBench](2026-04-16_GPBench/) | Li et al., *Nature Communications*, 2026 | 6 张官方主图、完整中文 Paper Card、逐图分析、来源包与审计 | benchmark 工作流、全部评分域与权重、分域小多图、样本分布 |
-| [2026-04-02 — Benchmarking agreement between large language models and published clinical trial conclusions across four artificial intelligence platforms](2026-04-02_Benchmarking_agreement_between_large_language_models_and_published_clinical_trial_conclusions_across_four_artificial_intelligence_platforms/) | Mao et al., *Scientific Reports*, 2026 | 1 张评分流程图及分析 | 评分者、0–5 域、汇总与一致性完整评分链 |
-| [2026-03-30 — BioMedAgent](2026-03-30_BioMedAgent/) | Bu et al., *Nature Biomedical Engineering*, 2026 | 3 张主图及分析 | 规划—编码—执行回路、逐任务状态、外部 benchmark |
-| [2026-02-18 — Benchmarking large language model-based agent systems for clinical decision tasks](2026-02-18_Benchmarking_large_language_model-based_agent_systems_for_clinical_decision_tasks/) | Liu et al., *npj Digital Medicine*, 2026 | 4 张主图及分析 | 准确率—token 权衡、工作流复杂度、幻觉传播 |
-| [2026-01-12 — PHIA](2026-01-12_PHIA/) | Merrill et al., *Nature Communications*, 2026 | 2 张主图及分析 | 自动客观指标与人工/专家评分分开呈现 |
-| [2025-10-14 — AFMBench](2025-10-14_AFMBench/) | Mandal et al., *Nature Communications*, 2025 | 3 张主图及分析 | 工具/agent 需求构成、成本效率、任务复杂度分层 |
-| [2025-05-01 — InferOperate Thorax](2025-05-01_InferOperate_Thorax/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中英文 Paper Card、中英文逐图分析、来源包与各自审计 | 多读者多病例设计、辅助前后临床规划结果 |
+| [2026-07-24 — Capable language models can outgrow the benefits of collaboration](01_2026-07-24_Capable_language_models_can_outgrow_the_benefits_of_collaboration/) | Kim et al., *Nature Machine Intelligence*, 2026 | 1 张代表图及分析 | 匹配小多图、箱线分布、相对变化标注 |
+| [2026-04-27 — AgentClinic](02_2026-04-27_AgentClinic/) | Schmidgall et al., *npj Digital Medicine*, 2026 | 2 张主图及分析 | agent 环境 + 具体轨迹、医生/患者模型因素拆分 |
+| [2026-04-16 — GPBench](03_2026-04-16_GPBench/) | Li et al., *Nature Communications*, 2026 | 6 张官方主图、完整中文 Paper Card、逐图分析、来源包与审计 | benchmark 工作流、全部评分域与权重、分域小多图、样本分布 |
+| [2026-04-02 — Benchmarking agreement between large language models and published clinical trial conclusions across four artificial intelligence platforms](04_2026-04-02_Benchmarking_agreement_between_large_language_models_and_published_clinical_trial_conclusions_across_four_artificial_intelligence_platforms/) | Mao et al., *Scientific Reports*, 2026 | 1 张评分流程图及分析 | 评分者、0–5 域、汇总与一致性完整评分链 |
+| [2026-03-30 — BioMedAgent](05_2026-03-30_BioMedAgent/) | Bu et al., *Nature Biomedical Engineering*, 2026 | 3 张主图及分析 | 规划—编码—执行回路、逐任务状态、外部 benchmark |
+| [2026-02-18 — Benchmarking large language model-based agent systems for clinical decision tasks](06_2026-02-18_Benchmarking_large_language_model-based_agent_systems_for_clinical_decision_tasks/) | Liu et al., *npj Digital Medicine*, 2026 | 4 张主图及分析 | 准确率—token 权衡、工作流复杂度、幻觉传播 |
+| [2026-01-12 — PHIA](07_2026-01-12_PHIA/) | Merrill et al., *Nature Communications*, 2026 | 2 张主图及分析 | 自动客观指标与人工/专家评分分开呈现 |
+| [2025-10-14 — AFMBench](08_2025-10-14_AFMBench/) | Mandal et al., *Nature Communications*, 2025 | 3 张主图及分析 | 工具/agent 需求构成、成本效率、任务复杂度分层 |
+| [2025-05-01 — InferOperate Thorax](09_2025-05-01_InferOperate_Thorax/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中英文 Paper Card、中英文逐图分析、来源包与各自审计 | 多读者多病例设计、辅助前后临床规划结果 |
 
 ## 对手术方案 benchmark 的组合参考
 
