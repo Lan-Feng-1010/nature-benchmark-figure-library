@@ -38,17 +38,6 @@
 | [2025-10-14 — AFMBench](08_2025-10-14_AFMBench/paper-card_en.md) | Mandal et al., *Nature Communications*, 2025 | 100 个可执行 AFM 任务揭示实验室智能体的知识—执行差距、提示敏感性和指令偏离风险。 | 工具/agent 需求构成、成本效率、任务复杂度分层 |
 | [2025-05-01 — InferOperate Thorax](09_2025-05-01_InferOperate_Thorax/paper-card_en.md) | Chen et al., *Nature Communications*, 2025 | 用读者研究比较术前规划辅助前后，评价 AI 驱动三维重建对手术决策的作用。 | 多读者多病例设计、辅助前后临床规划结果 |
 
-## 对手术方案 benchmark 的组合参考
-
-最实用的组合不是照搬一篇论文，而是：
-
-1. 用 GPBench Figure 1 语法画“输入—标注—系统—评分—结果”；
-2. 用 GPBench Figure 2 语法画全部评分域，但把不可补偿的安全条件放在门控层；
-3. 用 InferOperate Thorax 研究的多读者多病例结构组织临床方案比较；
-4. 用 Liu 等人临床智能体评测研究的状态图解释自动输出、人工复核和失败传播；
-5. 用 PHIA 的点区间图把自动几何指标与专家可接受性分开；
-6. 用 AFMBench 和 Kim 等人多智能体协作研究的小多图按病例复杂度、牙位或版本分层。
-
 ## 文件约定
 
 - 每篇论文一个目录。
