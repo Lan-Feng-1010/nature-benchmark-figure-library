@@ -38,17 +38,6 @@ Root paper folders use two-digit navigation ranks (`01` = newest) so GitHub's na
 | [2025-10-14 — AFMBench](08_2025-10-14_AFMBench/paper-card_en.md) | Mandal et al., *Nature Communications*, 2025 | One hundred executable AFM tasks expose a knowledge–execution gap, prompt sensitivity and instruction-deviation risks in laboratory agents. | Tool/agent requirement composition, cost efficiency and task-complexity stratification |
 | [2025-05-01 — InferOperate Thorax](09_2025-05-01_InferOperate_Thorax/paper-card_en.md) | Chen et al., *Nature Communications*, 2025 | AI-driven 3D reconstruction is evaluated in a reader study that compares surgical decisions before and after planning assistance. | Multi-reader multi-case design and clinical-planning results before versus after assistance |
 
-## Combined reference for a surgical-planning benchmark
-
-The most useful design combines figure grammars rather than copying one paper:
-
-1. Use GPBench Figure 1 to show “input → annotation → system → scoring → results”.
-2. Use GPBench Figure 2 to show all scoring domains, while keeping non-compensable safety requirements in a separate gating layer.
-3. Use the InferOperate Thorax study's multi-reader multi-case structure for clinical plan comparisons.
-4. Use the state diagrams in Liu et al.'s clinical-agent evaluation to explain automated output, human review and failure propagation.
-5. Use PHIA's point-and-interval plots to separate automated geometric metrics from expert acceptability.
-6. Use AFMBench and Kim et al.'s multi-agent collaboration small multiples to stratify by case complexity, tooth position or system version.
-
 ## File conventions
 
 - One directory per paper.
