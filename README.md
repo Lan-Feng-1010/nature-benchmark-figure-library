@@ -1,5 +1,7 @@
 # Nature Benchmark Figure Reference Library
 
+**语言：中文 | [English](README_EN.md)**
+
 这是一个按论文组织的科研画图参考库，重点保存 Nature Portfolio 及相关高影响力期刊中的：
 
 - benchmark 总工作流图；
@@ -15,15 +17,16 @@
 
 1. [GPBench 完整 Paper Card](01_GPBench_Nature_Communications_2026/paper-card.md)
 2. [GPBench 六张主图逐图分析](01_GPBench_Nature_Communications_2026/figure-analysis.md)
-3. [肺手术 AI-3D 规划研究 Paper Card](02_Lung_AI3D_Nature_Communications_2025/paper-card.md)
-4. 按下面的“可借鉴图形”选择其他论文。
+3. 肺手术 AI-3D 规划研究 Paper Card：[中文](02_Lung_AI3D_Nature_Communications_2025/paper-card.md) | [English](02_Lung_AI3D_Nature_Communications_2025/paper-card_en.md)
+4. 肺手术 AI-3D 四张主图逐图分析：[中文](02_Lung_AI3D_Nature_Communications_2025/figure-analysis.md) | [English](02_Lung_AI3D_Nature_Communications_2025/figure-analysis_en.md)
+5. 按下面的“可借鉴图形”选择其他论文。
 
 ## 论文目录
 
 | 目录 | 论文／期刊 | 保存内容 | 最值得借鉴的图形 |
 |---|---|---|---|
 | [01 GPBench](01_GPBench_Nature_Communications_2026/) | Li et al., *Nature Communications*, 2026 | 6 张官方主图、完整中文 Paper Card、逐图分析、来源包与审计 | benchmark 工作流、全部评分域与权重、分域小多图、样本分布 |
-| [02 Lung AI-3D](02_Lung_AI3D_Nature_Communications_2025/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中文 Paper Card 与审计 | 多读者多病例设计、辅助前后临床规划结果 |
+| [02 Lung AI-3D](02_Lung_AI3D_Nature_Communications_2025/) | Chen et al., *Nature Communications*, 2025 | 4 张主图页面、中英文 Paper Card、中英文逐图分析、来源包与各自审计 | 多读者多病例设计、辅助前后临床规划结果 |
 | [03 ClinicalAgentBench](03_ClinicalAgentBench_npj_Digital_Medicine_2026/) | Liu et al., *npj Digital Medicine*, 2026 | 4 张主图及分析 | 准确率—token 权衡、工作流复杂度、幻觉传播 |
 | [04 AgentClinic](04_AgentClinic_npj_Digital_Medicine_2026/) | Schmidgall et al., *npj Digital Medicine*, 2026 | 2 张主图及分析 | agent 环境 + 具体轨迹、医生/患者模型因素拆分 |
 | [05 BioMedAgent](05_BioMedAgent_Nature_Biomedical_Engineering_2026/) | Bu et al., *Nature Biomedical Engineering*, 2026 | 3 张主图及分析 | 规划—编码—执行回路、逐任务状态、外部 benchmark |
@@ -48,7 +51,9 @@
 - 每篇论文一个目录。
 - `figures/`：论文原始主图或忠实 PDF 页面视图，不保存重绘冒充原图的图片。
 - `paper-card.md`：完整中文深读卡片；仅在做过全文精读时提供。
+- `paper-card_en.md`：对应英文深读卡片；仅在已有来源一致性审计时提供。
 - `figure-analysis.md`：逐图说明画了什么、支持什么、不支持什么、可借鉴点与边界。
+- `figure-analysis_en.md`：对应英文逐图分析。
 - `audit-report.json`：Paper Card 的结构和来源定位审计。
 - 新增文献继续沿用此结构。
 

@@ -1,5 +1,7 @@
 # Paper Card：Artificial intelligence driven 3D reconstruction for enhanced lung surgery planning
 
+**语言：中文 | [English](paper-card_en.md)**
+
 > Source coverage: Full paper with all main-text figures and tables, plus official Supplementary Information
 >
 > Extraction confidence: High
