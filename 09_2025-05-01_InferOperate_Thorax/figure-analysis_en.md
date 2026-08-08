@@ -23,11 +23,6 @@ Figure 1 starts with 450 consecutively enrolled patients from three centres, the
 - It shows how the system is evaluated rather than focusing on the neural-network architecture.
 - Patient sources, reference-setting experts and evaluated readers are visually distinct roles, reducing ambiguity about leakage and responsibility.
 - The crossover and washout are explicit, so the same-reader, same-case comparison under two conditions is immediately understandable.
-- Inputs, allocation, intervention, control and outcomes form a complete visual chain that transfers well to surgical-planning benchmark design.
-
-### Transfer to a surgical-planning benchmark
-
-A corresponding workflow could be: case cohort → patient-level split → independent expert reference plans → frozen Agent generation → blinded clinical and geometric evaluation → human-review/failure states → stratified results. A clinician-assistance study can add randomized order, washout and crossover in its second half.
 
 ### What the figure does not establish
 
@@ -49,10 +44,6 @@ The figure does not identify which segmentation or rendering component caused th
 
 The figure follows a useful progression: overall effect → user consistency → task components → difficulty or prevalence interpretation. The overall panel answers the primary endpoint; reader and structure panels address robustness; prevalence panels explore where changes may be larger. This is more informative than a single mean-accuracy bar chart.
 
-### Transfer to a surgical-planning benchmark
-
-Reader panels can become case-, tooth-position-, centre- or system-version panels. Anatomical structures can become scoring domains such as position, axis, diameter, length, bone-wall clearance, canal or sinus safety. Prevalence can be replaced by case or anatomical complexity. The primary figure should report both overall performance and stratified uncertainty.
-
 ### Conclusion boundary
 
 A favourable direction for 35 of 39 structures shows broad within-study distribution, not guaranteed benefit for every rare variant or external centre. The prevalence analysis is exploratory and does not define a validated clinical indication. [Paper: PDF pp. 4 and 7, Figure 2]
@@ -68,10 +59,6 @@ Figure 3 first reports an increase in procedure-selection accuracy from 0.77 to 
 ### Why this is more useful than one success rate
 
 Aggregate accuracy can hide errors with different clinical consequences. The figure shows stronger effects for mistaken and insufficient resection but almost no improvement for excessive resection. A higher average performance therefore does not imply that every risk decreases.
-
-### Transfer to a surgical-planning benchmark
-
-In addition to overall acceptability, report wrong site, positional or angular deviation, undersized or oversized implants, inadequate bone-wall clearance, canal or sinus risk, no-plan output, manual-review states and harmful corrected-versus-misled transitions. Non-compensable safety events should be gates or separate outcomes rather than being cancelled by an average score.
 
 ### Conclusion boundary
 
@@ -89,10 +76,6 @@ Figure 4 reports a median reduction of 63 seconds, or 25%, in the reader plannin
 
 Efficiency and confidence remain separate from accuracy. Readers can therefore distinguish whether the workflow is faster, whether users feel more certain and whether decisions are more correct, without treating subjective experience as performance evidence.
 
-### Transfer to a surgical-planning benchmark
-
-Report Agent runtime, clinician review time, manual edits, autonomous-recommendation rate, manual-review rate and clinician confidence separately. Scatter or stratified plots can then test whether confidence and editing burden align with clinical acceptability.
-
 ### Conclusion boundary
 
 The 63-second difference applies to the reader interpretation task and excludes the AI reconstruction latency of approximately 233.76±75.08 seconds, so it is not a 63-second end-to-end saving. The confidence analysis uses a post-hoc threshold of exactly 100 and does not demonstrate calibration. [Paper: PDF pp. 6–7, Figure 4]
@@ -105,5 +88,3 @@ Figure 1: Is the evaluation workflow credible?
 → Figure 3: Which decision errors change, and which do not?
 → Figure 4: Do efficiency and subjective confidence change as well?
 ```
-
-This sequence is particularly useful for a surgical-planning benchmark: define the evaluation chain, report the main and stratified effects, decompose failure types, and finish with efficiency and human–AI interaction. Automated geometric compliance, expert acceptability and critical safety events should still remain separate evaluation layers.

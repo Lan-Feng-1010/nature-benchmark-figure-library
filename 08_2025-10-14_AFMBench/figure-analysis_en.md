@@ -20,8 +20,5 @@ Paper: Mandal I, Soni J, Zaki M, et al. *Evaluating large language model agents 
 
 - **Purpose:** combine domain overlaps, tool/step/token/success/latency metrics, and accuracy stratified by tool, difficulty, and agent count.
 - **Reusable pattern:** close the loop between performance, resource cost, and task complexity; repeated-trial points are more informative than a single bar.
-- **For ImplantAgent:** stratify by case complexity, site, multi-structure conflict, and manual-review need while reporting time and human burden.
 
 ## Evidence boundary
-
-AFMBench evaluates instrument automation. Its success definitions, tool risks, and task complexity cannot be converted directly into clinical implant-planning endpoints.

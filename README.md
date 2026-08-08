@@ -11,8 +11,6 @@ This public research-figure reference library is organized by paper. It focuses 
 - failure propagation, safety and human-rating figures;
 - source-aligned deep analysis of each figure.
 
-The repository is intended for personal research reading and figure-design reference. It does not define any ImplantAgent scoring item, weight, threshold, clinical endpoint or conclusion.
-
 Root paper folders use two-digit navigation ranks (`01` = newest) so GitHub's native folder list is newest first. The paper-directory titles below omit this navigation-only prefix.
 
 ## How to use this library

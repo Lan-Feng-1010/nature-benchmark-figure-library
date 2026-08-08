@@ -13,9 +13,4 @@ Paper: Schmidgall S, Ziaei R, Harris C, et al. *AgentClinic: a multimodal benchm
 ![Figure 2 — stratification by physician model, patient model, and data source](figures/agentclinic_fig2.png)
 
 - **Purpose:** three bar-chart groups vary the physician LLM, patient LLM, or dataset while explicitly showing which side remains fixed.
-- **Reusable pattern:** factor the agent from the simulated environment; for ImplantAgent, separately fix segmentation, candidate generation, and rule checking so upstream errors are not all assigned to the final planner.
 - **Limitation:** rank-like bars can understate uncertainty in the environment model itself.
-
-## Direct lesson for ImplantAgent
-
-Use one case trajectory to show case input → agent action → tool/image request → termination → expert decision, followed by stratified experiments that separate segmentation, candidate generation, geometry checks, and final recommendation.

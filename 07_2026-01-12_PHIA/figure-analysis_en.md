@@ -14,5 +14,4 @@ Paper: Merrill MA, Paruchuri A, Rezaei N, et al. *Transforming wearable data int
 
 - **Purpose:** one panel reports numerical accuracy; two interval plots report multiple reasoning-quality and code-quality dimensions.
 - **Reusable pattern:** do not combine automatic and human endpoints into one score; show relevance, interpretation, logic, and harm avoidance separately with uncertainty.
-- **For ImplantAgent:** plot geometric error and safety clearance separately from expert acceptability/executability, using interval plots rather than mean-only bars.
 - **Boundary:** PHIA's rubric addresses personal-health insights and code, not surgical-planning quality.

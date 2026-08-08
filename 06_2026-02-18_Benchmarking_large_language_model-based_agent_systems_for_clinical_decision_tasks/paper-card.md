@@ -141,7 +141,7 @@
 |---|---|---|
 | baseline 与 agent 使用不同模型/提示/工具 | 效应来源混合 | 同 backbone、同 prompt、同工具、同预算结构消融 |
 | hallucination 定义依赖人工/后处理规则 | 漏检与类别漂移 | 双专家盲审和预注册 taxonomy |
-| accuracy 成本曲线仍缺临床 utility | 小增益可能不值人工负担 | 将 manual review、危害严重度和时间纳入净效益 |
+| accuracy 成本曲线仍缺临床 utility | 小增益可能不值人工负担 | 将人工监督成本、危害严重度和时间纳入净效益 |
 
 ## 14 学到的知识
 
@@ -149,19 +149,10 @@
 - Agent-derived knowledge candidate：把性能—成本散点与最终排名并列。
 - Agent-derived knowledge candidate：用状态流表达错误在哪个安全门被捕获。
 
-## 15 与现有知识的连接
+## 15 与相关研究的连接
 
-[External] AgentClinic 详细拆解 patient/doctor/measurement/moderator 环境因素；本文则对通用 agent systems 增加成本和错误传播端点。参见 [AgentClinic](https://doi.org/10.1038/s41746-026-02674-7)。
+[Analysis] 本文可作为同类研究的证据组织和图形设计参考；其任务、数据、评价指标与结论不能直接外推到其他应用领域。
 
-[Analysis] 对 ImplantAgent，最直接映射是：几何异常发生 → 自动门控阻断 → manual_review → 最终推荐；每一步都应有病例数和转移比例。
+## 16 开放问题
 
-## 16 研究想法
-
-### Agent-derived research candidate：规划错误传播状态图
-
-- 起点：hallucination 发生—阻断—影响诊断的三层图。[Paper: PDF p. 8, Figure 5]
-- [Hypothesis] 以状态转移而非总体失败率报告，可识别最需要增强的安全门并预测人工负担。
-- Delta：把 hallucination 替换为分割、几何、解剖冲突、不可执行和缺信息五类失败。
-- 如何验证：逐病例记录首个失败、被何门控捕获、是否 manual_review、是否进入最终输出；与专家复核对照。
-- 可能失败：多重错误难归因；状态定义随版本变化。
-- 创新状态：unverified。
+[Analysis] 后续研究仍需在独立数据集上验证论文所述方法，并透明报告不确定性、失败案例与数据分布变化。

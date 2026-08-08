@@ -9,4 +9,3 @@ Paper: Mao G, Snyder W III, Chinthala AS, et al. *Benchmarking agreement between
 - **Purpose:** one flow connects standardized input, model output, two independent raters, five 0–5 domains, rater averaging, a 25-point total, and inter-rater reliability.
 - **Complement to GPBench:** GPBench Figure 2 explains what is scored and weighted; this figure explains who scores, which scale is used, how scores are aggregated, and how agreement is checked.
 - **Reusable pattern:** a surgical-planning scoring figure should state rater count, independence, scale anchors, adjudication, aggregation, and reliability analysis.
-- **Boundary:** the study measures textual agreement with published clinical-trial conclusions, uses two non-blinded raters, and does not justify transferring its five domains or 25-point total to implant planning.

@@ -121,19 +121,10 @@ Flow: 20 RCT numerical inputs → four platform outputs → two independent doma
 - Agent-derived knowledge candidate: retain domains and critical errors beside any total score.
 - Agent-derived knowledge candidate: conclusion agreement, expert acceptability, and real outcomes are different endpoints.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] GPBench is stronger at defining *what* is scored through six primary and fourteen secondary indicators; this paper is clearer about *who* scores and *how* scores aggregate. See [Nature Communications](https://doi.org/10.1038/s41467-026-71622-6).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] An ImplantAgent figure could combine both: left, planning domains; right, blinded expert rating, arbitration, aggregation, and reliability.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: two-layer surgical-plan scoring figure
-
-- Origin: five-domain, two-rater workflow. [Paper: PDF p. 3, Figure 2]
-- [Hypothesis] Hard safety gates plus multidomain acceptability scores will predict expert re-planning better than one compensatory total.
-- Delta: anatomic conflict/safety-distance failures cannot be offset by other domains.
-- Validation: blinded multi-expert scoring with weighted κ/ICC, case-level intervals, arbitration rate, and correction magnitude.
-- Failure modes: overlapping domains; too few experts; incorrect gate thresholds.
-- Innovation status: unverified.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

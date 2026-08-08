@@ -149,19 +149,10 @@ Flow: baseline/agent configuration → AgentClinic, MedAgentsBench, HLE → text
 - Agent-derived knowledge candidate: pair ranking with an accuracy–cost plot.
 - Agent-derived knowledge candidate: use a state flow to show where safeguards capture failures.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] AgentClinic dissects patient/doctor/measurement/moderator factors, while this study adds cost and error-propagation endpoints for general agent systems. See [AgentClinic](https://doi.org/10.1038/s41746-026-02674-7).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] For ImplantAgent: geometric failure → automated block → manual review → final recommendation, with case counts and transition proportions at each step.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: planning-error propagation state graph
-
-- Origin: the hallucination occurrence–blocking–impact structure. [Paper: PDF p. 8, Figure 5]
-- [Hypothesis] State transitions will identify the weakest safeguard and predict human-review burden better than an overall failure rate.
-- Delta: replace hallucination with segmentation, geometry, anatomy conflict, non-executability, and missing-information failures.
-- Validation: record first failure, capture gate, manual review, and final exposure per case against expert review.
-- Failure modes: multiple errors are difficult to attribute; states drift across versions.
-- Innovation status: unverified.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

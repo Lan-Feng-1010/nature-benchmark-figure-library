@@ -19,15 +19,8 @@ Paper: Liu Y, Carrero ZI, Jiang X, et al. *Benchmarking large language model-bas
 ![Figure 4 — time, path length, graph complexity, and tool-state flow](figures/clinical_agent_fig4.png)
 
 - **Purpose:** time, path length, mean node degree, and workflow graphs explain why agents are slow and how they act.
-- **Reusable pattern:** move beyond final correctness to process. A state flow fits ImplantAgent's automatic output, manual review, rejection, and recovery paths.
 - **Limitation:** dense graphs should retain only frequent or safety-critical transitions.
 
 ![Figure 5 — hallucination count, type, propagation, and diagnostic impact](figures/clinical_agent_fig5.png)
 
 - **Purpose:** distinguish total hallucinations, blocked hallucinations, and diagnosis-affecting hallucinations, then show propagation to final diagnosis.
-- **Reusable pattern:** separate error occurrence from error impact. For ImplantAgent, distinguish geometry anomalies, gate-captured anomalies, and anomalies exposed in recommendations.
-- **Boundary:** the paper's hallucination definition is not a dental-geometric failure definition; only the reporting structure transfers.
-
-## Direct lesson for ImplantAgent
-
-Organize the main evidence in four layers: case/task composition → final correctness or acceptability → time/human burden → workflow state and failure propagation. Do not replace these with one composite score.

@@ -268,75 +268,10 @@ Y_{ijk}=\mu+\tau_i+R_j+C_k+(\tau R)_{ij}+(RC)_{jk}+(\tau C)_{ik}+(\tau RC)_{ijk}
 - [Analysis] 热图和错误类型图回答“为什么/在哪里改善”；逐reader图回答“是否由少数医生驱动”；这两类图都比单一柱状图信息量高。
 - [Analysis] 未改善的错误类型（过度切除RR 0.98）应保留在主图中，它定义了系统能力边界，也增强可信度。
 
-## 15 与现有知识/ImplantAgent连接
+## 15 与相关研究的连接
 
-### 15.1 最值得直接借鉴的不是肺部算法，而是benchmark结构
+[Analysis] 本文可作为同类研究的证据组织和图形设计参考；其任务、数据、评价指标与结论不能直接外推到其他应用领域。
 
-- [Analysis] 独立专家参考：参考制定者不能看到ImplantAgent输出；若使用术后植体位置或手术记录，要明确它是“实施结果”还是“术前理想计划”，不能混为同一gold standard。
-- [Analysis] 患者级完全隔离：开发、内部验证、外部验证按患者分割，多个FDI位点需在统计中保留病例内聚类。
-- [Analysis] 双层评价：第一层评价冻结后的ImplantAgent独立输出；第二层若要证明临床辅助价值，再做“医生单独 vs 医生+ImplantAgent”的MRMC交叉研究。
-- [Analysis] 不建议把这两层合成一个准确率，因为“模型本身好不好”和“模型能否帮助医生”是两个不同问题。
+## 16 开放问题
 
-### 15.2 可迁移的结果框架（提案，尚未获项目批准）
-
-| 肺手术论文 | ImplantAgent可对应的候选表达 | 状态 |
-|---|---|---|
-| 解剖结构识别准确率 | 独立专家判定的病例/位点级临床可接受性 | [Hypothesis] 待批准 |
-| 术式选择准确率 | 有无方案、植体数量、FDI位点、尺寸类别或关键处置建议的一致性 | [Hypothesis] 待批准 |
-| 错误类型热图 | 漏规划、不必要规划、位置不安全、角度不当、尺寸不当、无方案/弃权、需人工纠正 | [Hypothesis] 待批准 |
-| corrected vs misled | 医生原判断→加入Agent后变正确/变错误的转移矩阵 | [Hypothesis] 待批准 |
-| 逐reader结果 | 逐医生辅助效应及经验分层 | [Hypothesis] 待批准 |
-| 时间/信心 | 规划用时、人工修改次数、信心与信心—准确率/校准关系 | [Hypothesis] 待批准 |
-| 几何未覆盖 | 入口点、根尖点、轴角、长度、直径和关键结构安全距离的连续误差 | [Analysis] ImplantAgent必须额外增加 |
-
-### 15.3 建议的主图逻辑（不是已接受方案）
-
-- [Hypothesis] Figure 1：病例与数据分割 → 独立专家参考 → 冻结Agent生成方案 → 专家盲评/几何比较 → 可选MRMC医生辅助研究。
-- [Hypothesis] Figure 2：总体临床可接受性 + 每病例/每FDI + 关键几何误差分布。
-- [Hypothesis] Figure 3：错误类型热图 + 无方案/弃权 + corrected/misled转移矩阵。
-- [Hypothesis] Figure 4：困难亚组、规划时间、人工修改和失败案例。
-
-[Analysis] 这里最重要的表述边界是：若ImplantAgent当前自动输出几何并在不可靠时进入manual review或不生成方案，应分别报告“产生辅助输出的比例”“自主给出推荐的比例”“临床可接受的比例”，不能把这些状态合并为一个成功率。
-
-## 16 研究构想
-
-### 构想1：冻结系统benchmark与临床MRMC分层验证
-
-- [Hypothesis] Origin：本论文验证的是“医生+AI”，但ImplantAgent还需要先证明独立输出本身的质量。
-- [Hypothesis] Testable hypothesis：ImplantAgent独立输出在外部患者级测试集上达到预设临床可接受性；随后医生+Agent相较医生单独能提高计划质量或减少时间，且不会增加严重错误。
-- [Hypothesis] Delta from paper：增加冻结的standalone arm，并保证standalone和assistance两个问题分别设定终点与样本量。
-- [Hypothesis] Minimal validation：独立双专家盲评+第三专家裁决；患者级聚类模型；预先登记严重错误、弃权和人工修正；MRMC阶段设置洗脱和随机顺序。
-- [Hypothesis] Failure modes：专家参考不独立、reader记忆病例、把manual review算成功、病例级与位点级分母混用、严重错误被平均值掩盖。
-- [Hypothesis] 创新状态（Innovation status）：Unverified；需用户审批后才能进入正式benchmark方案。
-
-### 构想2：计划组件的纠正—误导转移矩阵
-
-- [Hypothesis] Origin：本论文Supplementary Fig. S3B同时展示AI纠正和误导，而不是只报净准确率。
-- [Hypothesis] Testable hypothesis：对入口点、轴向、尺寸和安全处置等组件，Agent引入后的“错误→正确”转移显著多于“正确→错误”，且严重误导率低于预设安全界值。
-- [Hypothesis] Delta from paper：从单一术式标签扩展到多组件三维计划，并按临床严重度分层。
-- [Hypothesis] Minimal validation：每个组件保留医生单独、Agent独立、医生+Agent和专家参考四个状态；报告转移矩阵、绝对数量、比例和置信区间。
-- [Hypothesis] Failure modes：只报净改善、修改标准不统一、同一病例多个组件相关性未处理。
-- [Hypothesis] 创新状态（Innovation status）：Unverified。
-
-### 构想3：把弃权/人工复核作为安全结果而非缺失值
-
-- [Hypothesis] Origin：论文把缺失答案按错误处理并做敏感性分析；ImplantAgent本身存在manual review或no-plan状态。
-- [Hypothesis] Testable hypothesis：选择性输出策略能在可控覆盖率下降的同时，显著降低严重不安全计划率。
-- [Hypothesis] Delta from paper：把缺失进一步拆为技术失败、安全弃权、解剖不可判定和人工复核，而非统一当作错误或剔除。
-- [Hypothesis] Minimal validation：报告coverage–risk曲线、各状态分母、严重错误率、复核后可恢复比例，并做最坏情况敏感性分析。
-- [Hypothesis] Failure modes：把弃权从分母中删除造成表观准确率膨胀；人工复核产出的几何被误计为自主输出。
-- [Hypothesis] 创新状态（Innovation status）：Unverified。
-
----
-
-### Source boundary
-
-- [Paper] 主论文及补充材料支持本卡片中带`[Paper]`的设计、数字和作者结论。
-- [Analysis] 带`[Analysis]`的内容是对证据边界、潜在偏倚及其与ImplantAgent关系的分析，不是原作者原话。
-- [Hypothesis] 带`[Hypothesis]`的内容是待验证、待用户批准的研究构想，不构成当前项目已接受的终点或方案。
-
-### Primary sources
-
-1. Chen X, Dai C, Peng M, et al. Artificial intelligence driven 3D reconstruction for enhanced lung surgery planning. *Nature Communications*. 2025;16:4086. <https://doi.org/10.1038/s41467-025-59200-8>
-2. Official Supplementary Information accompanying the article. Local verified copy: `supplementary_information.pdf`.
-3. PubMed PMID 40312393: <https://pubmed.ncbi.nlm.nih.gov/40312393/>
+[Analysis] 后续研究仍需在独立数据集上验证论文所述方法，并透明报告不确定性、失败案例与数据分布变化。

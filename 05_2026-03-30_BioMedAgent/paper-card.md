@@ -125,19 +125,10 @@
 - Agent-derived knowledge candidate：把失败回路、重试次数、人工介入和最终状态纳入结果。
 - Agent-derived knowledge candidate：外部 benchmark 逐题比较比单一平均数更可审计。
 
-## 15 与现有知识的连接
+## 15 与相关研究的连接
 
-[External] AFMBench 将类似的工具型 agent 评价推进到真实 AFM 硬件执行，强调 instruction adherence 与安全失败：[Nature Communications](https://doi.org/10.1038/s41467-025-64105-7)。
+[Analysis] 本文可作为同类研究的证据组织和图形设计参考；其任务、数据、评价指标与结论不能直接外推到其他应用领域。
 
-[Analysis] BioMedAgent 更适合借鉴“多步骤工具执行+记忆”的过程审计；AFMBench 更适合借鉴物理系统风险和真实执行。
+## 16 开放问题
 
-## 16 研究想法
-
-### Agent-derived research candidate：带 provenance 的手术规划经验记忆
-
-- 起点：MR 跨任务保存经验。[Paper: Figure 4]
-- [Hypothesis] 只保存经专家确认且绑定病例特征/失败原因的规划经验，可降低重复失败而不扩大错误传播。
-- Delta：每条记忆包含来源病例、适用边界、专家状态、软件版本和撤销条件。
-- 如何验证：locked patient split；比较 no-memory、unfiltered memory、verified memory 的几何合格率、专家可接受性和污染传播率。
-- 可能失败：病例相似性错误；专家确认成本高；版本变化使记忆失效。
-- 创新状态：unverified。
+[Analysis] 后续研究仍需在独立数据集上验证论文所述方法，并透明报告不确定性、失败案例与数据分布变化。

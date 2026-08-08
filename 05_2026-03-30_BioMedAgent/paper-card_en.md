@@ -125,19 +125,10 @@ Flow: natural-language task → plan → select/learn tools → generate code �
 - Agent-derived knowledge candidate: include failure loops, retry count, human intervention, and final status.
 - Agent-derived knowledge candidate: external benchmarks should retain per-item differences.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] AFMBench moves related tool-agent evaluation to physical AFM hardware and emphasizes instruction adherence and safety failure: [Nature Communications](https://doi.org/10.1038/s41467-025-64105-7).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] BioMedAgent is the stronger reference for multistep tools and memory; AFMBench is stronger for physical-system risk.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: provenance-bound planning memory
-
-- Origin: MR stores experience across tasks. [Paper: Figure 4]
-- [Hypothesis] Saving only expert-verified planning experience with case features and failure reasons will reduce repeat failure without amplifying errors.
-- Delta: every memory contains source case, applicability boundary, expert status, software version, and revocation rule.
-- Validation: locked patient split comparing no memory, unfiltered memory, and verified memory on geometric validity, expert acceptability, and contamination propagation.
-- Failure modes: incorrect case similarity; high verification cost; version drift.
-- Innovation status: unverified.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

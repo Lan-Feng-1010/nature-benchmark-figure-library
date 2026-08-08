@@ -117,7 +117,6 @@ Flow: select task/model → run five topologies → collect success, tokens, mes
 - [Paper] Compute is matched per system, so MAS divides the total budget across agents. [Paper: PDF p. 19]
 - [Paper] The 87% figure is for held-out configurations within tested domains; leave-one-domain-out R² is −2.09. [Paper: PDF p. 8]
 - [Paper] Several tool-count and interaction effects do not survive conservative cluster-robust correction and are presented as directional. [Paper: PDF pp. 2–3, 8]
-- [Analysis] For surgical planning, the reusable lesson is stratified effect and cost reporting, not direct adoption of the 45% threshold.
 
 ## 12 Limitations Explicitly Acknowledged by the Authors
 
@@ -142,19 +141,10 @@ Flow: select task/model → run five topologies → collect success, tokens, mes
 - Agent-derived knowledge candidate: keep null outputs, incorrect outputs, cost, and error propagation as separate endpoints.
 - Agent-derived knowledge candidate: distinguish within-domain selection from cross-domain prediction and clinical transfer.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] The controlled topology analysis complements the clinical-agent benchmark by Liu et al., which emphasizes accuracy, token use, latency, and hallucination propagation. See [npj Digital Medicine](https://doi.org/10.1038/s41746-026-02443-6).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] A surgical-planning benchmark could replace generic task decomposability with case complexity, missing-tooth pattern, nearby risk structures, and need for manual review.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: case-stratified topology ablation for surgical planning
-
-- Origin: topology effects change with task structure. [Paper: PDF p. 5, Figure 2]
-- [Hypothesis] Complex multi-structure cases may benefit from parallel candidate generation plus centralized safety verification, whereas simple cases may only incur overhead.
-- Delta: replace generic agentic tasks with patient-level clinical tasks and lock all splits at patient level.
-- Validation: compare SAS, independent, and centralized systems on geometric validity, expert acceptability, manual-review rate, time, and failure propagation under matched total compute.
-- Failure modes: interaction tests may be underpowered; upstream segmentation error may dominate topology effects.
-- Innovation status: unverified; a dedicated surgical/dental agent-topology search is required.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

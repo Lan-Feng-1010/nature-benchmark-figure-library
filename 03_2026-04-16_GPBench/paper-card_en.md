@@ -160,19 +160,10 @@ Flow: open datasets/expert questions/outpatient records → competency-aligned a
 - Agent-derived knowledge candidate: one figure should define the entire benchmark loop; another should define every scoring domain and weight.
 - Agent-derived knowledge candidate: pair aggregate scores with failure categories and domain sample sizes.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] The lung-surgery AI-3D study in this repository supplies a more directly clinical reader-study template: crossed MRMC design, planning accuracy, time, confidence, and agreement. See [Nature Communications](https://doi.org/10.1038/s41467-025-59200-8).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] For ImplantAgent, GPBench is most useful for defining a multidomain rubric, while the lung study is more useful for evaluating an actual surgical-planning aid.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: non-compensatory surgical-plan competency benchmark
-
-- Origin: GPBench's competency hierarchy and uneven domain evidence. [Paper: PDF pp. 3, 10, Figures 2 and 6]
-- [Hypothesis] A plan-level profile that separates position, axis, depth, size, anatomic safety, executability, and manual-review reason will predict expert acceptance better than a compensatory total score.
-- Delta: introduce hard safety gates that cannot be offset by strengths in other domains.
-- Validation: compare domain profiles and total scores against expert accept/reject, correction type, and correction magnitude using patient-level splits and case-level intervals.
-- Failure modes: too few experts; rubric weights may not transport; hard gates may be incorrectly specified.
-- Innovation status: unverified; clinical consensus and dedicated prior-art search are required.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

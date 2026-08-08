@@ -68,8 +68,6 @@
 
 ![Figure 7 — PHIA, two query families, tools, and evaluation](figures/page-009.png)
 
-*Figure 7 connects input data, objective/open-ended queries, the agent workflow, tools, and evaluation; it is the most reusable workflow figure for a surgical-planning benchmark. [Paper: PDF p. 9, Figure 7]*
-
 Flow: synthetic wearable profiles → query type → Thought → Python / Web Search → Observation → iteration → automatic or human evaluation.
 
 ## 08 Core Module Breakdown
@@ -142,22 +140,10 @@ Flow: synthetic wearable profiles → query type → Thought → Python / Web Se
 4. Figures 3–4: separate failure taxonomy, incidence, and recovery.
 5. Figures 5–6: explain quantitative findings with representative trajectories.
 
-[Analysis] For surgical planning, map this to case input → plan/tool trajectory → objective geometry plus blinded expert rating → failure type → before/after self-correction.
+## 15 Connections to related research
 
-## 15 Project Translation Recommendations
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-- [Recommendation] Separate computable geometric/safety constraints from expert judgments of plan appropriateness.
-- [Recommendation] Tag the failure stage: input understanding, anatomy localization, parameter calculation, plan generation, verification, or correction.
-- [Recommendation] Report raw error, detection, repair, and final exposure rather than a single success rate.
-- [Boundary] PHIA's 84% cannot serve as a threshold for surgical planning; the task, data, and risk are different.
+## 16 Open questions
 
-## 16 New Research Idea
-
-**Idea: a surgical-planning agent benchmark with verifiable tool trajectories**
-
-- Clinical/scientific gap: an acceptable final plan does not reveal whether the agent reached it through incorrect anatomy or parameters.
-- Minimal viable experiment: compare one-shot plan generation, measurement-tool augmentation, and a multistep observe-and-correct agent on the same cases.
-- Primary endpoints: hard geometric-constraint satisfaction, blinded expert acceptance, error rate, recovery rate, and residual unblocked risk.
-- Minimum validation set: patient-level independent split; fixed backbone and tool budget; dual expert review; stage-level trajectory audit.
-- Possible failure: no gain in final acceptability, or an apparent gain accompanied by more undetected high-risk paths.
-- Innovation status: requires a systematic literature search; currently a project hypothesis inspired by PHIA's evaluation structure.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

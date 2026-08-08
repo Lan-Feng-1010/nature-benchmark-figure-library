@@ -117,7 +117,6 @@
 - [Paper] 匹配的是每个系统的总计算预算；MAS 将预算分给多个 agent，因此结论是系统级选择，不是单 agent 能力的纯消融。[Paper: PDF p. 19]
 - [Paper] 87% 是测试域内 held-out configuration 的架构选择准确率；LODO R² 为 −2.09，明确警告跨域绝对预测。[Paper: PDF p. 8]
 - [Paper] 工具数、智能指数和 baseline×agent 数的部分效应未通过保守 cluster-robust 校正，只能视为方向性模式。[Paper: PDF pp. 2–3, 8]
-- [Analysis] 对 ImplantAgent 的合理借鉴是画出模块/agent 对不同病例类型的异质效应和成本，而不是据 45% 阈值决定临床系统架构。
 
 ## 12 作者明确承认的局限
 
@@ -142,19 +141,10 @@
 - Agent-derived knowledge candidate：将 Null、Incorrect、成本和错误传播作为独立端点。
 - Agent-derived knowledge candidate：先声明推断层级——域内选择、跨域预测和临床迁移不能混写。
 
-## 15 与现有知识的连接
+## 15 与相关研究的连接
 
-[External] 该论文的受控比较思路与本资料库中的 clinical-agent benchmark 互补：后者同时报告准确率、token、延迟和幻觉传播，而本文更强调拓扑消融与系统预算公平。参见 [Liu et al., npj Digital Medicine](https://doi.org/10.1038/s41746-026-02443-6)。
+[Analysis] 本文可作为同类研究的证据组织和图形设计参考；其任务、数据、评价指标与结论不能直接外推到其他应用领域。
 
-[Analysis] 对手术方案 benchmark，可把“任务可分解性”替换为病例结构复杂度、缺牙类型、邻近风险结构和人工复核需求，并检验不同模块/agent 在这些层级上的效应是否一致。
+## 16 开放问题
 
-## 16 研究想法
-
-### Agent-derived research candidate：手术规划 agent 拓扑的病例分层消融
-
-- 起点：本文显示架构效应随任务结构改变。[Paper: PDF p. 5, Figure 2]
-- [Hypothesis] 复杂多结构冲突病例可能从并行候选生成+中心安全验证获益，而简单病例会因协调增加时间和错误面。
-- Delta：将通用 agentic benchmark 替换为患者级临床任务，并把病例拆分锁定在患者层面。
-- 如何验证：同一病例在 SAS、independent、centralized 条件下比较几何合格率、专家可接受性、manual_review 率、时间和失败传播；总计算预算匹配。
-- 可能失败：病例数不足以支持交互检验；上游分割误差主导后掩盖拓扑效应。
-- 创新状态：unverified；需要针对 surgical/dental agent topology 的专门检索。
+[Analysis] 后续研究仍需在独立数据集上验证论文所述方法，并透明报告不确定性、失败案例与数据分布变化。

@@ -44,7 +44,6 @@
 - [Paper] Keywords: AI-assisted surgical planning; three-dimensional reconstruction; thoracic surgery; MRMC; human–AI collaboration; clinical benchmark.
 - [Paper] Code and data availability: the commercial software is proprietary; source data are supplied for the reported figures, but the complete system is not openly reproducible from the article alone. [Paper: PDF p. 10]
 - [Paper] Funding and competing interests: the study was partly funded by Beijing Infervision Technology Co., Ltd.; several authors were company employees. [Paper: PDF p. 10]
-- [Analysis] Position relative to ImplantAgent: this paper is a close methodological analogue for evaluating whether an AI-derived representation improves clinicians' surgical-planning decisions, but it is not a benchmark of autonomous implant-plan generation.
 - Reading date: 5 August 2026.
 
 ## 02 One-Sentence Summary
@@ -135,7 +134,6 @@
 ```
 
 ![Figure 1 — MRMC study design (full PDF page view)](figures/page-003.png)
-*Figure 1 establishes the evaluation workflow rather than the neural-network architecture: cohort assembly, expert-reference construction, reader randomization, two fully crossed phases and the washout interval. This is the paper's most transferable main-workflow design for a surgical-planning benchmark. [Paper: PDF p. 3, Figure 1]*
 
 ### Operational details
 
@@ -339,90 +337,10 @@ Y_{ijk}=\mu+\tau_i+R_j+C_k+(\tau R)_{ij}+(RC)_{jk}+(\tau C)_{ik}+(\tau RC)_{ijk}
 - [Analysis] Corrected-versus-misled transitions are clinically more interpretable than net accuracy alone.
 - [Analysis] Standalone model validity, clinician-assistance benefit and patient-outcome benefit are separate evidentiary layers.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-### 15.1 Connection to ImplantAgent
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[User] The target system is an automated posterior dental-implant planning workflow operating on preoperative CBCT rather than an LLM benchmark.
+## 16 Open questions
 
-[Analysis] The most transferable contribution of this lung-surgery paper is the benchmark structure, not the pulmonary segmentation architecture:
-
-- The reference should be independent of ImplantAgent outputs.
-- If postoperative implant position or surgical records are used, they must be labelled as implementation outcomes rather than silently treated as the ideal preoperative plan.
-- Development, internal-validation and external-validation cohorts should remain separated at the patient level; multiple FDI sites within a patient require clustered analysis.
-- A frozen standalone-system benchmark and a later clinician-with-versus-without-Agent MRMC study answer different questions.
-- These two evaluation layers should not be collapsed into one accuracy or success rate.
-
-### 15.2 Candidate outcome mapping for ImplantAgent
-
-> The mappings below are analytical proposals, not approved project endpoints.
-
-| Lung-surgery study construct | Candidate ImplantAgent analogue | Status |
-|---|---|---|
-| Anatomical-identification accuracy | Independent blinded judgment of case- or site-level clinical acceptability | [Hypothesis] Pending approval |
-| Operation procedure selection | Agreement on whether to plan, implant count, FDI site, size category or key management recommendation | [Hypothesis] Pending approval |
-| Error-type heatmap | Omitted site, unnecessary implant, unsafe position, unsafe angulation, inappropriate dimensions, abstention/no-plan and manual correction | [Hypothesis] Pending approval |
-| Corrected versus misled | Transition from clinician-alone judgment to clinician-plus-Agent judgment | [Hypothesis] Pending approval |
-| Per-reader results | Clinician-specific assistance effects and experience strata | [Hypothesis] Pending approval |
-| Time and confidence | Planning time, number of manual edits, confidence and confidence–accuracy calibration | [Hypothesis] Pending approval |
-| Geometry not covered by the lung paper | Continuous differences in entry point, apex, axis, length, diameter and critical-structure clearance | [Analysis] Required for a geometric implant-planning benchmark |
-
-### 15.3 Candidate figure logic for ImplantAgent
-
-- [Hypothesis] Figure 1: cohort and patient-level split → independent expert reference → frozen Agent generation → blinded clinical and geometric evaluation → optional MRMC clinician-assistance study.
-- [Hypothesis] Figure 2: overall clinical acceptability → per-case/per-FDI performance → distributions of key geometric errors.
-- [Hypothesis] Figure 3: error-type heatmap → abstention/manual-review states → corrected-versus-misled transition matrix.
-- [Hypothesis] Figure 4: difficult-case subgroups → planning time → manual edits → representative failure cases.
-
-[Analysis] If ImplantAgent can emit geometry in a `manual_review` state or decline to recommend a plan, reporting should distinguish the rate of any assisted output, the autonomous-recommendation rate and the clinically acceptable-plan rate. Combining these states into one success rate would obscure the system's safety behaviour.
-
-## 16 Research Ideas
-
-### Agent-derived research candidate 1: Layered standalone and MRMC validation
-
-- Originating limitation or observation: the lung study evaluates surgeon plus AI but does not establish standalone AI-plan quality. [Paper: PDF pp. 3–7]
-- [Hypothesis] Core hypothesis: ImplantAgent can first achieve a prespecified level of clinical acceptability on a patient-level external test set, after which clinician plus Agent can improve plan quality or reduce planning time relative to clinician alone without increasing serious errors.
-- [Hypothesis] Delta from the paper: add a frozen standalone-system arm and treat standalone validity and assistance benefit as separate hypotheses with separate denominators and sample-size calculations.
-- [Hypothesis] Initial method: independent dual-expert blinded assessment with third-expert adjudication, followed by a randomized, washed-out MRMC crossover study.
-- [Hypothesis] Validation: use the same preoperative inputs for Agent, clinicians and reference experts; model patient and reader clustering; prespecify serious errors, abstentions and manual corrections; compare clinical acceptability, geometric error, serious-error rate and time.
-- [Hypothesis] Falsifying result: standalone acceptability fails the prespecified criterion, or clinician plus Agent does not improve the selected endpoint or increases serious errors.
-- [Hypothesis] Possible failure modes: non-independent references; residual reader memory; manual-review outputs counted as autonomous successes; case-level and site-level denominators mixed; severe failures hidden by averages.
-- [Hypothesis] Innovation status: unverified; prior-art search and user approval are required before adoption as a formal benchmark.
-
-### Agent-derived research candidate 2: Corrected-versus-misled transitions for plan components
-
-- Originating limitation or observation: Supplementary Fig. S3B reports both AI-corrected and AI-misled clinical decisions rather than net accuracy alone. [Paper: Supplementary PDF, Fig. S3B]
-- [Hypothesis] Core hypothesis: for entry point, axis, dimensions and safety-management components, transitions from incorrect to correct after Agent assistance will exceed transitions from correct to incorrect, while serious misleading transitions remain below a prespecified safety boundary.
-- [Hypothesis] Delta from the paper: extend a single procedure-selection label to multiple components of a 3D implant plan and stratify transitions by clinical severity.
-- [Hypothesis] Initial method: retain four states for every component—clinician alone, Agent alone, clinician plus Agent and independent expert reference.
-- [Hypothesis] Validation: report transition counts, proportions and confidence intervals with patient-level clustering; compare component-specific and severity-weighted results.
-- [Hypothesis] Falsifying result: harmful transitions equal or exceed corrective transitions, or severe misleading cases remain clinically unacceptable despite a positive average effect.
-- [Hypothesis] Possible failure modes: reporting only net improvement; inconsistent definitions of correction; failure to model correlated components from the same patient.
-- [Hypothesis] Innovation status: unverified.
-
-### Agent-derived research candidate 3: Treat abstention and manual review as safety outcomes
-
-- Originating limitation or observation: the lung study treated missing primary answers conservatively and conducted a sensitivity analysis; ImplantAgent additionally has `manual_review` and no-plan states. [Paper: PDF p. 4]
-- [Hypothesis] Core hypothesis: selective output can reduce serious unsafe-plan risk at the cost of lower autonomous coverage, producing a more favourable coverage–risk trade-off than forced prediction.
-- [Hypothesis] Delta from the paper: separate technical failure, safety abstention, anatomical indeterminacy and manual review instead of treating all non-answers as one missing category.
-- [Hypothesis] Initial method: define mutually exclusive system states before evaluation and retain all states in the denominator.
-- [Hypothesis] Validation: report coverage–risk curves, state-specific denominators, serious-error rates, post-review recovery rates and worst-case sensitivity analyses on a patient-level external cohort.
-- [Hypothesis] Falsifying result: declining coverage does not reduce serious-error risk, or manual review does not reliably recover safe plans.
-- [Hypothesis] Possible failure modes: removing abstentions from the denominator inflates apparent accuracy; assisted geometry is misclassified as autonomous output; review decisions vary substantially between experts.
-- [Hypothesis] Innovation status: unverified.
-
----
-
-### Source Boundary
-
-- [Paper] Statements labelled `[Paper]` are supported by the main article or its official Supplementary Information.
-- [External] External verification was limited to the official publication and bibliographic record.
-- [Analysis] Statements labelled `[Analysis]` are evidence-bounded interpretations and are not presented as the authors' own claims.
-- [Hypothesis] Statements labelled `[Hypothesis]` are unverified research candidates and do not constitute approved ImplantAgent endpoints, thresholds or study decisions.
-- [User] Statements labelled `[User]` reflect the user's project context.
-
-### Primary Sources
-
-1. Chen X, Dai C, Peng M, et al. Artificial intelligence driven 3D reconstruction for enhanced lung surgery planning. *Nature Communications*. 2025;16:4086. <https://doi.org/10.1038/s41467-025-59200-8>
-2. Official Supplementary Information accompanying the article. Verified local copy: `supplementary_information.pdf`.
-3. PubMed PMID 40312393: <https://pubmed.ncbi.nlm.nih.gov/40312393/>
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

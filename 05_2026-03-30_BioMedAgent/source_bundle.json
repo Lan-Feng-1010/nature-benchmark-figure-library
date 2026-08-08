@@ -28,16 +28,48 @@
   },
   "evidence_inventory": {
     "figures": [
-      {"id": "Figure 1", "title": "Framework and benchmark", "local_asset": "figures/biomedagent_fig1.png"},
-      {"id": "Figure 2", "title": "Performance of BioMedAgent", "local_asset": "figures/biomedagent_fig2.png"},
-      {"id": "Figure 3", "title": "Evaluation of the IE algorithm", "local_asset": null},
-      {"id": "Figure 4", "title": "Self-evolving through the MR algorithm", "local_asset": null},
-      {"id": "Figure 5", "title": "Evaluation on external benchmark BixBench and agent comparison", "local_asset": "figures/biomedagent_fig5.png"},
-      {"id": "Figure 6", "title": "Applying BioMedAgent to accelerate diverse biomedical data research", "local_asset": null}
+      {
+        "id": "Figure 1",
+        "title": "Framework and benchmark",
+        "local_asset": "figures/biomedagent_fig1.png"
+      },
+      {
+        "id": "Figure 2",
+        "title": "Performance of BioMedAgent",
+        "local_asset": "figures/biomedagent_fig2.png"
+      },
+      {
+        "id": "Figure 3",
+        "title": "Evaluation of the IE algorithm",
+        "local_asset": null
+      },
+      {
+        "id": "Figure 4",
+        "title": "Self-evolving through the MR algorithm",
+        "local_asset": null
+      },
+      {
+        "id": "Figure 5",
+        "title": "Evaluation on external benchmark BixBench and agent comparison",
+        "local_asset": "figures/biomedagent_fig5.png"
+      },
+      {
+        "id": "Figure 6",
+        "title": "Applying BioMedAgent to accelerate diverse biomedical data research",
+        "local_asset": null
+      }
     ],
     "datasets": [
-      {"id": "BioMed-AQA", "n": 327, "url": "https://huggingface.co/datasets/BOBQWERA/biomed-aqa-dataset"},
-      {"id": "BioMed-AQA-MCQ", "n": 172, "url": "https://huggingface.co/datasets/BOBQWERA/biomed-mcq-dataset"}
+      {
+        "id": "BioMed-AQA",
+        "n": 327,
+        "url": "https://huggingface.co/datasets/BOBQWERA/biomed-aqa-dataset"
+      },
+      {
+        "id": "BioMed-AQA-MCQ",
+        "n": 172,
+        "url": "https://huggingface.co/datasets/BOBQWERA/biomed-mcq-dataset"
+      }
     ]
   },
   "validation": {

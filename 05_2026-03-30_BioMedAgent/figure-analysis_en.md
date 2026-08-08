@@ -13,7 +13,6 @@ Paper: Bu D, Sun J, Li K, et al. *Empowering AI data scientists using a multi-ag
 ![Figure 2 — success rates, task-level states, and ablation](figures/biomedagent_fig2.png)
 
 - **Purpose:** a summary table reports overall/category success; a concentric task plot encodes success/failure, wins, plan length, tools, and question type; remaining panels show step distributions and components.
-- **Reusable pattern:** task-level outcomes expose stable failure clusters. A case-by-endpoint heatmap would be easier to read for ImplantAgent.
 - **Limitation:** the concentric encoding has high legend and color-learning costs and makes precise task lookup difficult.
 
 ![Figure 5 — item-level external BixBench comparison and capability table](figures/biomedagent_fig5.png)
@@ -21,10 +20,6 @@ Paper: Bu D, Sun J, Li K, et al. *Empowering AI data scientists using a multi-ag
 - **Purpose:** the top compares two systems item by item; the table distinguishes biomedical agents by planning, coding, tools, scale, and scoring.
 - **Reusable pattern:** external evaluation can show item-level differences rather than only one mean, while separately declaring system capability boundaries.
 - **Boundary:** performance on external analysis questions does not substitute for clinical external validation or patient outcomes.
-
-## Direct lesson for ImplantAgent
-
-Retain a case-by-endpoint state heatmap and report failure loops, retries, human intervention, and final state, but avoid reproducing an over-encoded concentric plot.
 
 ## Source boundary
 

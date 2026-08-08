@@ -4,8 +4,6 @@
 
 Paper: Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large language models with a general practice benchmark*. **Nature Communications**. 2026;17:5302. [DOI](https://doi.org/10.1038/s41467-026-71622-6)
 
-> This file focuses on how the authors describe the benchmark and results visually. Numerical claims are source-grounded; ImplantAgent lessons are project analysis.
-
 ## Figure 1 — complete benchmark workflow
 
 ![Figure 1 — GPBench workflow](figures/Figure_1.png)
@@ -33,7 +31,6 @@ Paper: Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large l
 - **What it shows:** ten models across six weighted MCQ domains.
 - **Strength:** rapid recognition of capability profiles and imbalance.
 - **Limitation:** heavy overlap, no uncertainty, and a radial axis beginning at 0.4 visually magnify differences.
-- **For ImplantAgent:** prefer a version-by-domain heatmap with patient-level bootstrap intervals; reserve radar plots for perhaps three references.
 
 ## Figure 4 — six open-case result panels
 
@@ -42,7 +39,6 @@ Paper: Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large l
 - **What it shows:** diagnosis/differential, complications, emergency recognition, referral, best treatment plan, and health education on a shared 0–100 scale.
 - **Strength:** one panel per clinical domain with consistent axes makes cross-domain difficulty easy to inspect.
 - **Limitation:** bars omit case distributions, confidence intervals, rater variation, and statistical comparisons.
-- **For ImplantAgent:** use panels for position, angulation, depth, diameter/length, safety clearance, and executability, with case points, 95% CIs, denominators, and review status.
 
 ## Figure 5 — a single bottleneck
 
@@ -59,7 +55,6 @@ Paper: Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large l
 - **What it shows:** 3,661 questions distributed across six primary and fourteen secondary domains.
 - **Supported claim:** benchmark evidence is unevenly distributed; knowledge and diagnosis dominate while some domains are sparse.
 - **Boundary:** task count is not clinical importance, difficulty, discrimination, or scoring quality.
-- **For ImplantAgent:** publish case counts by tooth site, jaw, difficulty, image condition, and output state so sparse high-risk strata remain visible.
 
 ## How the six figures form one narrative
 
@@ -72,14 +67,4 @@ Paper: Li Z, Yang Y, Lang J, et al. *Evaluating clinical competencies of large l
 | What is the key bottleneck? | Figure 5 | Critical single endpoint |
 | Is coverage balanced? | Figure 6 | Sample-distribution audit |
 
-## Direct recommendations for a surgical-planning benchmark
-
-1. Reuse Figure 1's grammar: cases → reference/annotation → system states → automatic plus expert evaluation → results and failure types.
-2. Reuse Figure 2's hierarchy only after approval; show safety gates separately from compensatory quality scores.
-3. Reuse Figure 4's small multiples but add case points, 95% CIs, denominators, missingness, and review status.
-4. Preserve Figure 6's coverage audit across site, jaw, difficulty, imaging condition, and system state.
-5. Add what GPBench lacks: a failure-mechanism or safety-gate flow showing why a case could not be recommended automatically.
-
 ## Evidence boundary
-
-GPBench demonstrates how to organize and present a multilayer clinical LLM benchmark. It does not validate implant position, angle, depth, dimensions, clearance, acceptability, or ImplantAgent thresholds; those require the project's clinical protocol and preapproved evaluation plan.

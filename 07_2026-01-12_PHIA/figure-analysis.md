@@ -14,5 +14,3 @@
 
 - **图的任务：** a 用横条报告客观数值正确率；b、c 用点估计和区间分别报告 reasoning quality 与 code quality 的多个子维度。
 - **可借鉴：** 自动指标和人工评价不要混成一个分数；专家评分应按 relevance、interpretation、logic、avoids harm 等子维度展示，并显示不确定性。
-- **对 ImplantAgent：** 自动几何误差、安全距离与专家可接受性/可执行性应分别成图；专家评分建议用点区间图，不只画均值柱。
-- **边界：** PHIA 的评分域针对个人健康洞见和代码质量，不是牙科手术方案 rubric。

@@ -148,22 +148,10 @@ Flow: user task → supervisor/routing → AFM Handler or Data Handler → docum
 4. Figure 4: make failure modes a standalone main result.
 5. Figures 5–6: bridge benchmark evidence to physical-device validation with an explicit proof-of-concept boundary.
 
-[Analysis] For surgical planning, Figure 2 can become case difficulty, missing-tooth type, anatomy risk, required tools, decision stages, and scoring dimensions; Figure 4 can become localization, measurement, implant selection, trajectory, and safety-distance errors.
+## 15 Connections to related research
 
-## 15 Project Translation Recommendations
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-- [Recommendation] Separate static medical knowledge QA from executable surgical-planning tasks.
-- [Recommendation] Declare case, tool, stage, difficulty, and clinical-risk coverage before showing model ranks.
-- [Recommendation] Use a high-risk tool allowlist and report refusal, overreach, erroneous invocation, and undetected hazard separately.
-- [Recommendation] Fix backbone, prompt budget, and permissions when comparing single-stage, pipeline, and multi-agent systems.
+## 16 Open questions
 
-## 16 New Research Idea
-
-**Idea: benchmark the transfer from static clinical QA to executable implant planning**
-
-- Clinical/scientific gap: whether medical-knowledge performance transfers to case-level measurement, implant selection, and safe trajectory planning is unknown.
-- Minimal viable experiment: test the same models on static knowledge questions and image-tool-assisted case planning; compare rankings and failure structures.
-- Primary endpoints: knowledge accuracy, hard-constraint satisfaction, expert acceptance, tool error, sleepwalking/permission violation, tokens, and time.
-- Minimum validation set: patient-level independent test; at least two anatomy difficulty strata; dual blinded experts; real tool logs; fixed permissions.
-- Possible failure: knowledge rank does not predict planning rank, or automation gain increases unblocked safety risk.
-- Innovation status: requires systematic literature verification; currently a hypothesis inspired by AFMBench's knowledge–execution gap.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

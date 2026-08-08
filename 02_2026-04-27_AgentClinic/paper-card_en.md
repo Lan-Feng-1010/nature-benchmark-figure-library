@@ -152,19 +152,10 @@ Flow: convert case to OSCE JSON → isolate role information → doctor queries 
 - Agent-derived knowledge candidate: treat the environment generator as part of the benchmark.
 - Agent-derived knowledge candidate: distinguish actively requested information from oracle-provided information.
 
-## 15 Connections to Existing Knowledge
+## 15 Connections to related research
 
-[External] Liu et al. later combine AgentClinic with MedAgentsBench and HLE while adding token, latency, and hallucination-process metrics: [npj Digital Medicine](https://doi.org/10.1038/s41746-026-02443-6).
+[Analysis] This paper can inform evidence organization and figure design in related research; its tasks, data, metrics and conclusions cannot be transferred directly to other application domains.
 
-[Analysis] Surgical planning can map this loop to patient/imaging input → segmentation and measurement tools → planning agent → safety moderator, with each error source reported separately.
+## 16 Open questions
 
-## 16 Research Ideas
-
-### Agent-derived research candidate: partially observed surgical-planning benchmark
-
-- Origin: active information acquisition in AgentClinic. [Paper: PDF p. 2, Figure 1]
-- [Hypothesis] A planner that chooses appropriate CBCT views, labels, and measurements before planning will be more acceptable than one that receives all oracle annotations at once.
-- Delta: replace dialogue tests with controlled imaging/geometry tool calls.
-- Validation: compare partial-observation and oracle-information conditions on success, invalid requests, calls, time, manual review, and expert acceptability.
-- Failure modes: tool interface may be unrealistically simple; annotation noise may dominate.
-- Innovation status: unverified.
+[Analysis] Future work should validate the reported method on independent datasets and report uncertainty, failure cases, and distribution shifts transparently.

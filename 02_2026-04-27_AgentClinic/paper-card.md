@@ -152,19 +152,10 @@
 - Agent-derived knowledge candidate：把环境生成器视为 benchmark 的组成部分并做消融。
 - Agent-derived knowledge candidate：主动请求信息和被动接收完整信息应作为两个不同条件。
 
-## 15 与现有知识的连接
+## 15 与相关研究的连接
 
-[External] Liu 等随后在同刊把 AgentClinic 与 MedAgentsBench、HLE 一起用于比较通用 agent systems，并加入 token、延迟和 hallucination 过程指标：[npj Digital Medicine](https://doi.org/10.1038/s41746-026-02443-6)。
+[Analysis] 本文可作为同类研究的证据组织和图形设计参考；其任务、数据、评价指标与结论不能直接外推到其他应用领域。
 
-[Analysis] 手术规划可对应为：患者/影像输入 → 分割与测量工具 → 候选规划 agent → 安全 moderator；每个角色的错误都应单独记录。
+## 16 开放问题
 
-## 16 研究想法
-
-### Agent-derived research candidate：部分可观察的手术规划 benchmark
-
-- 起点：AgentClinic 的主动信息获取任务。[Paper: PDF p. 2, Figure 1]
-- [Hypothesis] 在不一次性暴露全部人工标注的条件下，能选择正确测量/影像视图的规划 agent 更可能生成可接受方案。
-- Delta：将对话检查请求替换为对 CBCT 视图、解剖标签和距离测量的受控调用。
-- 如何验证：与“oracle 全信息”条件对照，报告任务成功、无效请求、总调用、时间、manual_review 和专家可接受性。
-- 可能失败：工具接口过度简化；上游标注噪声成为主要误差源。
-- 创新状态：unverified。
+[Analysis] 后续研究仍需在独立数据集上验证论文所述方法，并透明报告不确定性、失败案例与数据分布变化。
